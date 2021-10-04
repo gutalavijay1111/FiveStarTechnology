@@ -1,0 +1,1148 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Hex Test | Play the colour game</title>
+<link rel="stylesheet" href="/hex-test/dist/css/app.css" as="style" onload="this.rel='stylesheet'">
+
+<link rel="shortcut icon" href="/hex-test/dist/images/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/hex-test/dist/images/favicon/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/hex-test/dist/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/hex-test/dist/images/favicon/favicon-48x48.png">
+<link rel="manifest" href="/hex-test/dist/images/favicon/manifest.json">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#fff">
+<meta name="application-name" content="Tailwind">
+<link rel="apple-touch-icon" sizes="57x57" href="/hex-test/dist/images/favicon/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/hex-test/dist/images/favicon/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/hex-test/dist/images/favicon/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/hex-test/dist/images/favicon/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/hex-test/dist/images/favicon/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/hex-test/dist/images/favicon/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/hex-test/dist/images/favicon/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/hex-test/dist/images/favicon/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="167x167" href="/hex-test/dist/images/favicon/apple-touch-icon-167x167.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/hex-test/dist/images/favicon/apple-touch-icon-180x180.png">
+<link rel="apple-touch-icon" sizes="1024x1024" href="/hex-test/dist/images/favicon/apple-touch-icon-1024x1024.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Tailwind">
+<meta name="msapplication-TileColor" content="#FFF">
+<meta name="msapplication-TileImage" content="/hex-test/dist/images/favicon/mstile-144x144.png">
+<meta name="msapplication-config" content="/hex-test/dist/images/favicon/browserconfig.xml">
+<meta name="description" content="We’ve created a game that’s simple. Guess the hex. All you’ve got to do is drag the card to the hex you think is correct. Simple, right?">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="robots" content="all">
+<meta content="en_US" property="og:locale">
+<meta content="Hex Test" property="og:site_name">
+<meta content="website" property="og:type">
+<meta content="https://madebyshape.co.uk/hex-test/play/" property="og:url">
+<meta content="Hex Test" property="og:title">
+<meta content="We’ve created a game that’s simple. Guess the hex. All you’ve got to do is drag the card to the hex you think is correct. Simple, right?" property="og:description">
+<meta content="https://madebyshape.co.uk/hex-test/dist/images/og-image.jpg" property="og:image">
+<meta content="1200" property="og:image:width">
+<meta content="630" property="og:image:height">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@madebyshape">
+<meta name="twitter:creator" content="@madebyshape">
+<meta name="twitter:title" content="Hex Text">
+<meta name="twitter:description" content="We’ve created a game that’s simple. Guess the hex. All you’ve got to do is drag the card to the hex you think is correct. Simple, right?">
+<meta name="twitter:image" content="https://madebyshape.co.uk/hex-test/dist/images/twitter-image.jpg">
+<meta name="twitter:image:width" content="800">
+<meta name="twitter:image:height" content="418">
+<link href="https://madebyshape.co.uk/hex-test/play/" rel="canonical">
+<link href="https://madebyshape.co.uk/" rel="home">
+<link rel="stylesheet" href="https://use.typekit.net/zpp8kbv.css">
+<script src="https://kit.fontawesome.com/e6cfc0f848.js" crossorigin="anonymous"></script>
+</head>
+<body class="fixed overflow-hidden w-full screen-height top-0 left-0" id="body" x-data="{ viewportHeight: null }" x-init="viewportHeight = window.innerHeight * 0.01; document.documentElement.style.setProperty('--vh', `${viewportHeight}px`);">
+
+<div id="info" class="w-full lg:w-10/12 xl:w-8/12 relative mx-auto mfp-hide">
+<div class="w-10/12 lg:w-full max-w-4xl bg-black-alpha-10 mx-auto relative text-center">
+<a href="" class="js-lightbox__close text-white absolute top-0 right-0 -mt-16 -mr-5 p-5 js-hoverable hover:scale-80" id="video-stop">
+<i class="fas fa-times"></i>
+</a>
+<div>
+<div class="w-full relative block flickity transition js-flickity" data-flickity='{ "cellAlign":"left", "contain": true, "fade": true, "adaptiveHeight": true, "draggable": false, "prevNextButtons": true, "autoPlay": false, "pageDots": false }'>
+<div class="flickity__slide w-full flex flex-wrap transition">
+<div class="w-full md:w-1/2 relative inline-block">
+<img src="/hex-test/dist/images/slideshow-01.jpg" alt="">
+</div>
+<div class="w-full md:w-1/2 inline-flex items-center justify-center p-8 lg:p-20">
+<div class="font-sans-primary font-bold text-xl lg:text-2xl text-white">
+Ah maybe its not so easy, here’s a helping hand...
+</div>
+</div>
+</div>
+<div class="flickity__slide w-full flex flex-wrap transition">
+<div class="w-full md:w-1/2 relative inline-block">
+<img src="/hex-test/dist/images/slideshow-02.jpg" alt="">
+</div>
+<div class="w-full md:w-1/2 inline-flex items-center justify-center p-8 lg:p-20">
+<div class="font-sans-primary font-bold text-xl lg:text-2xl text-white">
+Remember the characters are divided into three, red green and blue.
+</div>
+</div>
+</div>
+<div class="flickity__slide w-full flex flex-wrap transition">
+<div class="w-full md:w-1/2 relative inline-block">
+<img src="/hex-test/dist/images/slideshow-03.jpg" alt="">
+</div>
+<div class="w-full md:w-1/2 inline-flex items-center justify-center p-8 lg:p-20">
+<div>
+<div class="font-sans-primary font-bold text-xl lg:text-2xl text-white mb-2 lg:mb-5">
+The character values are between 0 - 9 and A - F.
+</div>
+<div class="font-sans-primary font-bold text-xl lg:text-2xl text-white">
+A to F represents the numbers 10-15.
+</div>
+</div>
+</div>
+</div>
+<div class="flickity__slide w-full flex flex-wrap transition">
+<div class="w-full md:w-1/2 relative inline-block">
+<img src="/hex-test/dist/images/slideshow-04.jpg" alt="">
+</div>
+<div class="w-full md:w-1/2 inline-flex items-center justify-center p-8 lg:p-20">
+<div class="font-sans-primary font-bold text-xl lg:text-2xl text-white">
+Look out for the highest pair of codes and what colour they define, this will help you chose the correct hex code.
+</div>
+</div>
+</div>
+<div class="flickity__slide w-full flex flex-wrap transition">
+<div class="w-full md:w-1/2 relative inline-block">
+<img src="/hex-test/dist/images/slideshow-05.jpg" alt="">
+</div>
+<div class="w-full md:w-1/2 inline-flex items-center justify-center p-8 lg:p-20">
+<div>
+<div class="font-sans-primary font-bold text-xl lg:text-2xl text-white">
+See, maybe it is so simple.
+</div>
+<div class="font-sans-primary font-bold text-xl lg:text-2xl text-white mt-5">
+<a href="https://madebyshape.co.uk/" target="_blank" class="js-lightbox__close js-hoverable relative inline-block underlined">
+Continue Playing
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w-full fixed top-0 left-0 z-30 flex justify-between items-center p-5 lg:p-10">
+<div class="inline-flex pace__fade">
+<div class="mx-auto font-sans-primary text-white text-sm text-white font-medium inline-flex flex-col items-center justify-center">
+<span>
+Level <span class="js-level__current">1</span>/<span class="js-level__total" data-total="10">10</span>
+</span>
+</div>
+</div>
+<div class="inline-flex relative pace__fade">
+<a href="#info" class="w-12 h-12 relative inline-flex relative items-center justify-center text-xs hover:scale-80 group js-lightbox--inline js-hoverable">
+<span class="absolute top-0 left-0 w-full h-full flex items-center justify-center z-20 text-white">
+<i class="fas fa-info transition--slow group-hover:rotate-360"></i>
+</span>
+<div class="w-full h-full absolute top-0 left-0 rounded-full border border-solid border-white">
+</div>
+</a>
+</div>
+</div>
+
+<div class="w-full screen-height z-0 absolute top-0 left-0 pointer-events-none">
+</div>
+
+<div class="cursor hidden xl:block transition pace__fade">
+<div class="cursor__ball cursor__ball--big js-cursor__ball--big">
+<svg height="90" width="90">
+<circle cx="45" cy="45" r="36" stroke-width="0">
+<div class="cursor__text js-cursor__text">
+<i class="far fa-hand-paper js-cursor__hand"></i>
+</div>
+</circle>
+</svg>
+</div>
+</div>
+
+<div class="pace__container js-pace__container">
+
+<div class="pace__exiter js-pace__exiter">
+</div>
+
+<div class="w-full flex flex items-center justify-center relative overflow-hidden screen-height">
+
+<div class="fixed top-0 left-0 z-30 bg-white-alpha-30 h-2 lg:h-3 w-full level__progress js-level__progress">
+<div class="h-2 lg:h-3 w-full fixed top-0 left-0 bg-white transition--slow level__progress-bar js-level__progress-bar" style="width: 0%"></div>
+</div>
+
+<div class="w-full screen-height absolute top-0 left-0 flex items-center justify-center level js-level is-active" style="background-color: #3a53ff" data-level="1" data-colour="#3a53ff">
+<div class="w-full screen-height absolute top-0 left-0 bg-secondary-500 flex items-center justify-center level__result level__result--right js-level__result" data-result="bingo" data-level="1">
+<div class="inline-flex flex-col items-center justify-center text-center">
+<div class="inline-flex font-sans-primary font-semibold text-white text-3xl sm:text-4xl max-w-2xl level__result-heading">
+<div>
+Correct!
+</div>
+</div>
+<div class="inline-flex font-sans-primary text-white text-base max-w-2xl mb-6 lg:mb-10 level__result-text">
+<div>
+Didn't think you'd get that one.
+</div>
+</div>
+<div class="inline-flex level__result-button">
+<a href="#" class="button level__next js-level__next">
+<span>
+Continue
+</span>
+<div class="button__shape">
+</div>
+<div class="button__background">
+ </div>
+<span>
+<i class="far fa-chevron-double-right"></i>
+</span>
+</a>
+</div>
+</div>
+</div>
+<div class="w-full screen-height absolute top-0 left-0 bg-primary-500 flex items-center justify-center level__result level__result--left js-level__result" data-result="bongo" data-level="1">
+<div class="inline-flex flex-col items-center justify-center text-center">
+<div class="inline-flex font-sans-primary font-semibold text-white text-3xl sm:text-4xl max-w-2xl level__result-heading">
+<div>
+That's incorrect!
+</div>
+</div>
+<div class="inline-flex font-sans-primary text-white text-base max-w-2xl mb-6 lg:mb-10 level__result-text">
+<div>
+Can you try a bit harder please...
+</div>
+</div>
+<div class="inline-flex level__result-button">
+<a href="#" class="button level__next js-level__next">
+<span>
+Continue
+</span>
+<div class="button__shape">
+</div>
+<div class="button__background">
+</div>
+<span>
+<i class="far fa-chevron-double-right"></i>
+</span>
+</a>
+</div>
+</div>
+</div>
+<div class="w-full h-full relative flex items-center justify-center top-0 left-0 level__answers js-level__answers" data-level="1">
+<div class="inline-block mb-32 lg:mb-0 w-full lg:w-6/12 xl:w-7/12 2xl:w-6/12 h-px relative transition z-20 level__border js-level__border">
+</div>
+<div class="w-full h-auto lg:h-full absolute bottom-0 left-0 mb-32 lg:mb-0 flex items-center justify-between flex-row-reverse z-20">
+<div class="font-sans-primary text-white text-2xl lg:text-3xl 2xl:text-4xl transition hover:scale-110 js-hoverable font-semibold px-1/12 level__answer js-level__answer" data-position="right" data-result="bingo" data-level="1">
+<div class="inline-flex flex-shrink-0 lowercase relative">
+<div class="flex lg:hidden w-full absolute top-0 left-0 flex justify-center -mt-6 text-sm">
+<span class="inline-block relative">
+<i class="far fa-share level__draggable-key js-level__draggable-key is-active"></i>
+</span>
+</div>
+<span>
+#3a53ff
+</span>
+</div>
+</div>
+<div class="font-sans-primary text-white text-2xl lg:text-3xl 2xl:text-4xl font-semibold transition hover:scale-110 js-hoverable px-1/12 level__answer js-level__answer" data-position="left" data-result="bongo" data-level="1">
+<div class="inline-flex flex-shrink-0 lowercase relative">
+<div class="flex lg:hidden w-full absolute top-0 left-0 flex justify-center -mt-6 text-sm">
+<span class="mirror">
+<i class="far fa-share level__draggable-key js-level__draggable-key is-active"></i>
+</span>
+</div>
+<span>
+#9022DC
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w-full screen-height absolute top-0 left-0 flex items-center justify-center level js-level" style="background-color: #ccad3e" data-level="2" data-colour="#ccad3e">
+<div class="w-full screen-height absolute top-0 left-0 bg-secondary-500 flex items-center justify-center level__result level__result--left js-level__result" data-result="bingo" data-level="2">
+<div class="inline-flex flex-col items-center justify-center text-center">
+<div class="inline-flex font-sans-primary font-semibold text-white text-3xl sm:text-4xl max-w-2xl level__result-heading">
+<div>
+Correct!
+</div>
+</div>
+<div class="inline-flex font-sans-primary text-white text-base max-w-2xl mb-6 lg:mb-10 level__result-text">
+<div>
+Boom boom shake the room, nailed it!
+</div>
+</div>
+<div class="inline-flex level__result-button">
+<a href="#" class="button level__next js-level__next">
+<span>
+Continue
+</span>
+<div class="button__shape">
+</div>
+<div class="button__background">
+</div>
+<span>
+<i class="far fa-chevron-double-right"></i>
+</span>
+</a>
+</div>
+</div>
+</div>
+<div class="w-full screen-height absolute top-0 left-0 bg-primary-500 flex items-center justify-center level__result level__result--right js-level__result" data-result="bongo" data-level="2">
+<div class="inline-flex flex-col items-center justify-center text-center">
+<div class="inline-flex font-sans-primary font-semibold text-white text-3xl sm:text-4xl max-w-2xl level__result-heading">
+<div>
+That's incorrect!
+</div>
+</div>
+<div class="inline-flex font-sans-primary text-white text-base max-w-2xl mb-6 lg:mb-10 level__result-text">
+<div>
+Uhoh, had a shocker there.
+</div>
+</div>
+<div class="inline-flex level__result-button">
+<a href="#" class="button level__next js-level__next">
+<span>
+Continue
+</span>
+<div class="button__shape">
+</div>
+<div class="button__background">
+</div>
+<span>
+<i class="far fa-chevron-double-right"></i>
+</span>
+</a>
+</div>
+</div>
+</div>
+<div class="w-full h-full relative flex items-center justify-center top-0 left-0 level__answers js-level__answers" data-level="2">
+<div class="inline-block mb-32 lg:mb-0 w-full lg:w-6/12 xl:w-7/12 2xl:w-6/12 h-px relative transition z-20 level__border js-level__border">
+</div>
+<div class="w-full h-auto lg:h-full absolute bottom-0 left-0 mb-32 lg:mb-0 flex items-center justify-between z-20">
+<div class="font-sans-primary text-white text-2xl lg:text-3xl 2xl:text-4xl transition hover:scale-110 js-hoverable font-semibold px-1/12 level__answer js-level__answer" data-position="left" data-result="bingo" data-level="2">
+<div class="inline-flex flex-shrink-0 lowercase relative">
+<div class="flex lg:hidden w-full absolute top-0 left-0 flex justify-center -mt-6 text-sm">
+<span class="inline-block relative mirror">
+<i class="far fa-share level__draggable-key js-level__draggable-key is-active"></i>
+</span>
+ </div>
+<span>
+#ccad3e
+</span>
+</div>
+</div>
+<div class="font-sans-primary text-white text-2xl lg:text-3xl 2xl:text-4xl font-semibold transition hover:scale-110 js-hoverable px-1/12 level__answer js-level__answer" data-position="right" data-result="bongo" data-level="2">
+<div class="inline-flex flex-shrink-0 lowercase relative">
+<div class="flex lg:hidden w-full absolute top-0 left-0 flex justify-center -mt-6 text-sm">
+<span class="">
+<i class="far fa-share level__draggable-key js-level__draggable-key is-active"></i>
+</span>
+</div>
+<span>
+#724269
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w-full screen-height absolute top-0 left-0 flex items-center justify-center level js-level" style="background-color: #e256b8" data-level="3" data-colour="#e256b8">
+<div class="w-full screen-height absolute top-0 left-0 bg-secondary-500 flex items-center justify-center level__result level__result--left js-level__result" data-result="bingo" data-level="3">
+<div class="inline-flex flex-col items-center justify-center text-center">
+<div class="inline-flex font-sans-primary font-semibold text-white text-3xl sm:text-4xl max-w-2xl level__result-heading">
+<div>
+Correct!
+</div>
+</div>
+<div class="inline-flex font-sans-primary text-white text-base max-w-2xl mb-6 lg:mb-10 level__result-text">
+<div>
+You. Are. Such. A. Show. Off.
+</div>
+</div>
+<div class="inline-flex level__result-button">
+<a href="#" class="button level__next js-level__next">
+<span>
+Continue
+</span>
+<div class="button__shape">
+</div>
+<div class="button__background">
+</div>
+<span>
+<i class="far fa-chevron-double-right"></i>
+</span>
+</a>
+</div>
+</div>
+</div>
+<div class="w-full screen-height absolute top-0 left-0 bg-primary-500 flex items-center justify-center level__result level__result--right js-level__result" data-result="bongo" data-level="3">
+<div class="inline-flex flex-col items-center justify-center text-center">
+<div class="inline-flex font-sans-primary font-semibold text-white text-3xl sm:text-4xl max-w-2xl level__result-heading">
+<div>
+That's incorrect!
+</div>
+</div>
+<div class="inline-flex font-sans-primary text-white text-base max-w-2xl mb-6 lg:mb-10 level__result-text">
+<div>
+Okay I wouldn't have got that either...
+</div>
+</div>
+<div class="inline-flex level__result-button">
+<a href="#" class="button level__next js-level__next">
+<span>
+Continue
+</span>
+<div class="button__shape">
+</div>
+<div class="button__background">
+</div>
+<span>
+<i class="far fa-chevron-double-right"></i>
+ </span>
+</a>
+</div>
+</div>
+</div>
+<div class="w-full h-full relative flex items-center justify-center top-0 left-0 level__answers js-level__answers" data-level="3">
+<div class="inline-block mb-32 lg:mb-0 w-full lg:w-6/12 xl:w-7/12 2xl:w-6/12 h-px relative transition z-20 level__border js-level__border">
+</div>
+<div class="w-full h-auto lg:h-full absolute bottom-0 left-0 mb-32 lg:mb-0 flex items-center justify-between z-20">
+<div class="font-sans-primary text-white text-2xl lg:text-3xl 2xl:text-4xl transition hover:scale-110 js-hoverable font-semibold px-1/12 level__answer js-level__answer" data-position="left" data-result="bingo" data-level="3">
+<div class="inline-flex flex-shrink-0 lowercase relative">
+<div class="flex lg:hidden w-full absolute top-0 left-0 flex justify-center -mt-6 text-sm">
+<span class="inline-block relative mirror">
+<i class="far fa-share level__draggable-key js-level__draggable-key is-active"></i>
+</span>
+</div>
+<span>
+#e256b8
+</span>
+</div>
+</div>
+<div class="font-sans-primary text-white text-2xl lg:text-3xl 2xl:text-4xl font-semibold transition hover:scale-110 js-hoverable px-1/12 level__answer js-level__answer" data-position="right" data-result="bongo" data-level="3">
+<div class="inline-flex flex-shrink-0 lowercase relative">
+<div class="flex lg:hidden w-full absolute top-0 left-0 flex justify-center -mt-6 text-sm">
+<span class="">
+<i class="far fa-share level__draggable-key js-level__draggable-key is-active"></i>
+</span>
+</div>
+<span>
+#E4B251
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w-full screen-height absolute top-0 left-0 flex items-center justify-center level js-level" style="background-color: #9656e2" data-level="4" data-colour="#9656e2">
+<div class="w-full screen-height absolute top-0 left-0 bg-secondary-500 flex items-center justify-center level__result level__result--right js-level__result" data-result="bingo" data-level="4">
+<div class="inline-flex flex-col items-center justify-center text-center">
+<div class="inline-flex font-sans-primary font-semibold text-white text-3xl sm:text-4xl max-w-2xl level__result-heading">
+<div>
+Correct!
+</div>
+</div>
+<div class="inline-flex font-sans-primary text-white text-base max-w-2xl mb-6 lg:mb-10 level__result-text">
+<div>
+Awwwh man you are too good at this.
+</div>
+</div>
+<div class="inline-flex level__result-button">
+<a href="#" class="button level__next js-level__next">
+<span>
+Continue
+</span>
+<div class="button__shape">
+</div>
+<div class="button__background">
+</div>
+<span>
+<i class="far fa-chevron-double-right"></i>
+</span>
+</a>
+</div>
+</div>
+</div>
+<div class="w-full screen-height absolute top-0 left-0 bg-primary-500 flex items-center justify-center level__result level__result--left js-level__result" data-result="bongo" data-level="4">
+<div class="inline-flex flex-col items-center justify-center text-center">
+<div class="inline-flex font-sans-primary font-semibold text-white text-3xl sm:text-4xl max-w-2xl level__result-heading">
+<div>
+That's incorrect!
+</div>
+</div>
+<div class="inline-flex font-sans-primary text-white text-base max-w-2xl mb-6 lg:mb-10 level__result-text">
+<div>
+C'mon we believe in you, keep going!
+</div>
+</div>
+<div class="inline-flex level__result-button">
+<a href="#" class="button level__next js-level__next">
+<span>
+Continue
+</span>
+<div class="button__shape">
+</div>
+<div class="button__background">
+</div>
+<span>
+<i class="far fa-chevron-double-right"></i>
+</span>
+</a>
+</div>
+</div>
+</div>
+<div class="w-full h-full relative flex items-center justify-center top-0 left-0 level__answers js-level__answers" data-level="4">
+<div class="inline-block mb-32 lg:mb-0 w-full lg:w-6/12 xl:w-7/12 2xl:w-6/12 h-px relative transition z-20 level__border js-level__border">
+</div>
+<div class="w-full h-auto lg:h-full absolute bottom-0 left-0 mb-32 lg:mb-0 flex items-center justify-between flex-row-reverse z-20">
+<div class="font-sans-primary text-white text-2xl lg:text-3xl 2xl:text-4xl transition hover:scale-110 js-hoverable font-semibold px-1/12 level__answer js-level__answer" data-position="right" data-result="bingo" data-level="4">
+<div class="inline-flex flex-shrink-0 lowercase relative">
+<div class="flex lg:hidden w-full absolute top-0 left-0 flex justify-center -mt-6 text-sm">
+<span class="inline-block relative">
+<i class="far fa-share level__draggable-key js-level__draggable-key is-active"></i>
+</span>
+</div>
+<span>
+#9656e2
+</span>
+</div>
+</div>
+<div class="font-sans-primary text-white text-2xl lg:text-3xl 2xl:text-4xl font-semibold transition hover:scale-110 js-hoverable px-1/12 level__answer js-level__answer" data-position="left" data-result="bongo" data-level="4">
+<div class="inline-flex flex-shrink-0 lowercase relative">
+<div class="flex lg:hidden w-full absolute top-0 left-0 flex justify-center -mt-6 text-sm">
+<span class="mirror">
+<i class="far fa-share level__draggable-key js-level__draggable-key is-active"></i>
+</span>
+</div>
+<span>
+#FC61E8
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w-full screen-height absolute top-0 left-0 flex items-center justify-center level js-level" style="background-color: #56b7e2" data-level="5" data-colour="#56b7e2">
+<div class="w-full screen-height absolute top-0 left-0 bg-secondary-500 flex items-center justify-center level__result level__result--right js-level__result" data-result="bingo" data-level="5">
+<div class="inline-flex flex-col items-center justify-center text-center">
+<div class="inline-flex font-sans-primary font-semibold text-white text-3xl sm:text-4xl max-w-2xl level__result-heading">
+<div>
+Correct!
+</div>
+</div>
+<div class="inline-flex font-sans-primary text-white text-base max-w-2xl mb-6 lg:mb-10 level__result-text">
+<div>
+Boom boom shake the room, nailed it!
+</div>
+</div>
+<div class="inline-flex level__result-button">
+<a href="#" class="button level__next js-level__next">
+<span>
+Continue
+</span>
+<div class="button__shape">
+</div>
+<div class="button__background">
+</div>
+<span>
+<i class="far fa-chevron-double-right"></i>
+</span>
+</a>
+</div>
+</div>
+</div>
+<div class="w-full screen-height absolute top-0 left-0 bg-primary-500 flex items-center justify-center level__result level__result--left js-level__result" data-result="bongo" data-level="5">
+<div class="inline-flex flex-col items-center justify-center text-center">
+<div class="inline-flex font-sans-primary font-semibold text-white text-3xl sm:text-4xl max-w-2xl level__result-heading">
+<div>
+That's incorrect!
+</div>
+</div>
+<div class="inline-flex font-sans-primary text-white text-base max-w-2xl mb-6 lg:mb-10 level__result-text">
+<div>
+Uhoh, had a shocker there.
+</div>
+</div>
+<div class="inline-flex level__result-button">
+<a href="#" class="button level__next js-level__next">
+<span>
+Continue
+</span>
+<div class="button__shape">
+</div>
+<div class="button__background">
+</div>
+<span>
+<i class="far fa-chevron-double-right"></i>
+</span>
+</a>
+</div>
+</div>
+</div>
+<div class="w-full h-full relative flex items-center justify-center top-0 left-0 level__answers js-level__answers" data-level="5">
+<div class="inline-block mb-32 lg:mb-0 w-full lg:w-6/12 xl:w-7/12 2xl:w-6/12 h-px relative transition z-20 level__border js-level__border">
+</div>
+<div class="w-full h-auto lg:h-full absolute bottom-0 left-0 mb-32 lg:mb-0 flex items-center justify-between flex-row-reverse z-20">
+<div class="font-sans-primary text-white text-2xl lg:text-3xl 2xl:text-4xl transition hover:scale-110 js-hoverable font-semibold px-1/12 level__answer js-level__answer" data-position="right" data-result="bingo" data-level="5">
+<div class="inline-flex flex-shrink-0 lowercase relative">
+<div class="flex lg:hidden w-full absolute top-0 left-0 flex justify-center -mt-6 text-sm">
+<span class="inline-block relative">
+<i class="far fa-share level__draggable-key js-level__draggable-key is-active"></i>
+</span>
+</div>
+<span>
+#56b7e2
+</span>
+</div>
+</div>
+<div class="font-sans-primary text-white text-2xl lg:text-3xl 2xl:text-4xl font-semibold transition hover:scale-110 js-hoverable px-1/12 level__answer js-level__answer" data-position="left" data-result="bongo" data-level="5">
+<div class="inline-flex flex-shrink-0 lowercase relative">
+<div class="flex lg:hidden w-full absolute top-0 left-0 flex justify-center -mt-6 text-sm">
+<span class="mirror">
+<i class="far fa-share level__draggable-key js-level__draggable-key is-active"></i>
+</span>
+</div>
+<span>
+#14D788
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w-full screen-height absolute top-0 left-0 flex items-center justify-center level js-level" style="background-color: #56e2c4" data-level="6" data-colour="#56e2c4">
+<div class="w-full screen-height absolute top-0 left-0 bg-secondary-500 flex items-center justify-center level__result level__result--left js-level__result" data-result="bingo" data-level="6">
+<div class="inline-flex flex-col items-center justify-center text-center">
+<div class="inline-flex font-sans-primary font-semibold text-white text-3xl sm:text-4xl max-w-2xl level__result-heading">
+<div>
+Correct!
+</div>
+</div>
+<div class="inline-flex font-sans-primary text-white text-base max-w-2xl mb-6 lg:mb-10 level__result-text">
+<div>
+You. Are. Such. A. Show. Off.
+</div>
+</div>
+<div class="inline-flex level__result-button">
+<a href="#" class="button level__next js-level__next">
+<span>
+Continue
+</span>
+<div class="button__shape">
+</div>
+<div class="button__background">
+</div>
+<span>
+<i class="far fa-chevron-double-right"></i>
+</span>
+</a>
+</div>
+</div>
+</div>
+<div class="w-full screen-height absolute top-0 left-0 bg-primary-500 flex items-center justify-center level__result level__result--right js-level__result" data-result="bongo" data-level="6">
+<div class="inline-flex flex-col items-center justify-center text-center">
+<div class="inline-flex font-sans-primary font-semibold text-white text-3xl sm:text-4xl max-w-2xl level__result-heading">
+<div>
+That's incorrect!
+</div>
+</div>
+<div class="inline-flex font-sans-primary text-white text-base max-w-2xl mb-6 lg:mb-10 level__result-text">
+<div>
+Can you try a bit harder please...
+</div>
+</div>
+<div class="inline-flex level__result-button">
+<a href="#" class="button level__next js-level__next">
+<span>
+Continue
+</span>
+<div class="button__shape">
+</div>
+<div class="button__background">
+</div>
+<span>
+<i class="far fa-chevron-double-right"></i>
+</span>
+</a>
+</div>
+</div>
+</div>
+<div class="w-full h-full relative flex items-center justify-center top-0 left-0 level__answers js-level__answers" data-level="6">
+<div class="inline-block mb-32 lg:mb-0 w-full lg:w-6/12 xl:w-7/12 2xl:w-6/12 h-px relative transition z-20 level__border js-level__border">
+</div>
+<div class="w-full h-auto lg:h-full absolute bottom-0 left-0 mb-32 lg:mb-0 flex items-center justify-between z-20">
+<div class="font-sans-primary text-white text-2xl lg:text-3xl 2xl:text-4xl transition hover:scale-110 js-hoverable font-semibold px-1/12 level__answer js-level__answer" data-position="left" data-result="bingo" data-level="6">
+<div class="inline-flex flex-shrink-0 lowercase relative">
+<div class="flex lg:hidden w-full absolute top-0 left-0 flex justify-center -mt-6 text-sm">
+<span class="inline-block relative mirror">
+<i class="far fa-share level__draggable-key js-level__draggable-key is-active"></i>
+</span>
+</div>
+<span>
+#56e2c4
+</span>
+</div>
+</div>
+<div class="font-sans-primary text-white text-2xl lg:text-3xl 2xl:text-4xl font-semibold transition hover:scale-110 js-hoverable px-1/12 level__answer js-level__answer" data-position="right" data-result="bongo" data-level="6">
+<div class="inline-flex flex-shrink-0 lowercase relative">
+<div class="flex lg:hidden w-full absolute top-0 left-0 flex justify-center -mt-6 text-sm">
+<span class="">
+<i class="far fa-share level__draggable-key js-level__draggable-key is-active"></i>
+</span>
+</div>
+<span>
+#BD6C96
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w-full screen-height absolute top-0 left-0 flex items-center justify-center level js-level" style="background-color: #9be256" data-level="7" data-colour="#9be256">
+<div class="w-full screen-height absolute top-0 left-0 bg-secondary-500 flex items-center justify-center level__result level__result--right js-level__result" data-result="bingo" data-level="7">
+<div class="inline-flex flex-col items-center justify-center text-center">
+<div class="inline-flex font-sans-primary font-semibold text-white text-3xl sm:text-4xl max-w-2xl level__result-heading">
+<div>
+Correct!
+</div>
+</div>
+<div class="inline-flex font-sans-primary text-white text-base max-w-2xl mb-6 lg:mb-10 level__result-text">
+<div>
+Didn't think you'd get that one.
+</div>
+</div>
+<div class="inline-flex level__result-button">
+<a href="#" class="button level__next js-level__next">
+<span>
+Continue
+</span>
+<div class="button__shape">
+</div>
+<div class="button__background">
+</div>
+<span>
+<i class="far fa-chevron-double-right"></i>
+</span>
+</a>
+</div>
+</div>
+</div>
+<div class="w-full screen-height absolute top-0 left-0 bg-primary-500 flex items-center justify-center level__result level__result--left js-level__result" data-result="bongo" data-level="7">
+<div class="inline-flex flex-col items-center justify-center text-center">
+<div class="inline-flex font-sans-primary font-semibold text-white text-3xl sm:text-4xl max-w-2xl level__result-heading">
+<div>
+That's incorrect!
+</div>
+</div>
+<div class="inline-flex font-sans-primary text-white text-base max-w-2xl mb-6 lg:mb-10 level__result-text">
+<div>
+Okay I wouldn't have got that either...
+</div>
+</div>
+<div class="inline-flex level__result-button">
+<a href="#" class="button level__next js-level__next">
+<span>
+Continue
+</span>
+<div class="button__shape">
+</div>
+<div class="button__background">
+</div>
+<span>
+<i class="far fa-chevron-double-right"></i>
+</span>
+</a>
+</div>
+</div>
+</div>
+<div class="w-full h-full relative flex items-center justify-center top-0 left-0 level__answers js-level__answers" data-level="7">
+<div class="inline-block mb-32 lg:mb-0 w-full lg:w-6/12 xl:w-7/12 2xl:w-6/12 h-px relative transition z-20 level__border js-level__border">
+</div>
+<div class="w-full h-auto lg:h-full absolute bottom-0 left-0 mb-32 lg:mb-0 flex items-center justify-between flex-row-reverse z-20">
+<div class="font-sans-primary text-white text-2xl lg:text-3xl 2xl:text-4xl transition hover:scale-110 js-hoverable font-semibold px-1/12 level__answer js-level__answer" data-position="right" data-result="bingo" data-level="7">
+<div class="inline-flex flex-shrink-0 lowercase relative">
+<div class="flex lg:hidden w-full absolute top-0 left-0 flex justify-center -mt-6 text-sm">
+<span class="inline-block relative">
+<i class="far fa-share level__draggable-key js-level__draggable-key is-active"></i>
+</span>
+</div>
+<span>
+#9be256
+</span>
+</div>
+</div>
+<div class="font-sans-primary text-white text-2xl lg:text-3xl 2xl:text-4xl font-semibold transition hover:scale-110 js-hoverable px-1/12 level__answer js-level__answer" data-position="left" data-result="bongo" data-level="7">
+<div class="inline-flex flex-shrink-0 lowercase relative">
+<div class="flex lg:hidden w-full absolute top-0 left-0 flex justify-center -mt-6 text-sm">
+<span class="mirror">
+<i class="far fa-share level__draggable-key js-level__draggable-key is-active"></i>
+</span>
+</div>
+<span>
+#C0CA1A
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w-full screen-height absolute top-0 left-0 flex items-center justify-center level js-level" style="background-color: #e2bd56" data-level="8" data-colour="#e2bd56">
+<div class="w-full screen-height absolute top-0 left-0 bg-secondary-500 flex items-center justify-center level__result level__result--left js-level__result" data-result="bingo" data-level="8">
+<div class="inline-flex flex-col items-center justify-center text-center">
+<div class="inline-flex font-sans-primary font-semibold text-white text-3xl sm:text-4xl max-w-2xl level__result-heading">
+<div>
+Correct!
+</div>
+</div>
+<div class="inline-flex font-sans-primary text-white text-base max-w-2xl mb-6 lg:mb-10 level__result-text">
+<div>
+Boom boom shake the room, nailed it!
+</div>
+</div>
+<div class="inline-flex level__result-button">
+<a href="#" class="button level__next js-level__next">
+<span>
+Continue
+</span>
+<div class="button__shape">
+</div>
+<div class="button__background">
+</div>
+<span>
+<i class="far fa-chevron-double-right"></i>
+</span>
+</a>
+</div>
+</div>
+</div>
+<div class="w-full screen-height absolute top-0 left-0 bg-primary-500 flex items-center justify-center level__result level__result--right js-level__result" data-result="bongo" data-level="8">
+<div class="inline-flex flex-col items-center justify-center text-center">
+<div class="inline-flex font-sans-primary font-semibold text-white text-3xl sm:text-4xl max-w-2xl level__result-heading">
+<div>
+That's incorrect!
+</div>
+</div>
+<div class="inline-flex font-sans-primary text-white text-base max-w-2xl mb-6 lg:mb-10 level__result-text">
+<div>
+C'mon we believe in you, keep going!
+</div>
+</div>
+<div class="inline-flex level__result-button">
+<a href="#" class="button level__next js-level__next">
+<span>
+Continue
+</span>
+<div class="button__shape">
+</div>
+<div class="button__background">
+</div>
+<span>
+<i class="far fa-chevron-double-right"></i>
+</span>
+</a>
+</div>
+</div>
+</div>
+<div class="w-full h-full relative flex items-center justify-center top-0 left-0 level__answers js-level__answers" data-level="8">
+<div class="inline-block mb-32 lg:mb-0 w-full lg:w-6/12 xl:w-7/12 2xl:w-6/12 h-px relative transition z-20 level__border js-level__border">
+</div>
+<div class="w-full h-auto lg:h-full absolute bottom-0 left-0 mb-32 lg:mb-0 flex items-center justify-between z-20">
+<div class="font-sans-primary text-white text-2xl lg:text-3xl 2xl:text-4xl transition hover:scale-110 js-hoverable font-semibold px-1/12 level__answer js-level__answer" data-position="left" data-result="bingo" data-level="8">
+<div class="inline-flex flex-shrink-0 lowercase relative">
+<div class="flex lg:hidden w-full absolute top-0 left-0 flex justify-center -mt-6 text-sm">
+<span class="inline-block relative mirror">
+<i class="far fa-share level__draggable-key js-level__draggable-key is-active"></i>
+</span>
+</div>
+<span>
+#e2bd56
+</span>
+</div>
+</div>
+<div class="font-sans-primary text-white text-2xl lg:text-3xl 2xl:text-4xl font-semibold transition hover:scale-110 js-hoverable px-1/12 level__answer js-level__answer" data-position="right" data-result="bongo" data-level="8">
+<div class="inline-flex flex-shrink-0 lowercase relative">
+<div class="flex lg:hidden w-full absolute top-0 left-0 flex justify-center -mt-6 text-sm">
+<span class="">
+<i class="far fa-share level__draggable-key js-level__draggable-key is-active"></i>
+</span>
+</div>
+<span>
+#C0CA1A
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w-full screen-height absolute top-0 left-0 flex items-center justify-center level js-level" style="background-color: #e25091" data-level="9" data-colour="#e25091">
+<div class="w-full screen-height absolute top-0 left-0 bg-secondary-500 flex items-center justify-center level__result level__result--right js-level__result" data-result="bingo" data-level="9">
+<div class="inline-flex flex-col items-center justify-center text-center">
+<div class="inline-flex font-sans-primary font-semibold text-white text-3xl sm:text-4xl max-w-2xl level__result-heading">
+<div>
+Correct!
+</div>
+</div>
+<div class="inline-flex font-sans-primary text-white text-base max-w-2xl mb-6 lg:mb-10 level__result-text">
+<div>
+You. Are. Such. A. Show. Off.
+</div>
+</div>
+<div class="inline-flex level__result-button">
+<a href="#" class="button level__next js-level__next">
+<span>
+Continue
+</span>
+<div class="button__shape">
+</div>
+<div class="button__background">
+</div>
+<span>
+<i class="far fa-chevron-double-right"></i>
+</span>
+</a>
+</div>
+</div>
+</div>
+<div class="w-full screen-height absolute top-0 left-0 bg-primary-500 flex items-center justify-center level__result level__result--left js-level__result" data-result="bongo" data-level="9">
+<div class="inline-flex flex-col items-center justify-center text-center">
+<div class="inline-flex font-sans-primary font-semibold text-white text-3xl sm:text-4xl max-w-2xl level__result-heading">
+<div>
+That's incorrect!
+</div>
+</div>
+<div class="inline-flex font-sans-primary text-white text-base max-w-2xl mb-6 lg:mb-10 level__result-text">
+<div>
+Uhoh, had a shocker there.
+</div>
+</div>
+<div class="inline-flex level__result-button">
+<a href="#" class="button level__next js-level__next">
+<span>
+Continue
+</span>
+<div class="button__shape">
+</div>
+<div class="button__background">
+</div>
+<span>
+<i class="far fa-chevron-double-right"></i>
+</span>
+</a>
+</div>
+</div>
+</div>
+<div class="w-full h-full relative flex items-center justify-center top-0 left-0 level__answers js-level__answers" data-level="9">
+<div class="inline-block mb-32 lg:mb-0 w-full lg:w-6/12 xl:w-7/12 2xl:w-6/12 h-px relative transition z-20 level__border js-level__border">
+</div>
+<div class="w-full h-auto lg:h-full absolute bottom-0 left-0 mb-32 lg:mb-0 flex items-center justify-between flex-row-reverse z-20">
+<div class="font-sans-primary text-white text-2xl lg:text-3xl 2xl:text-4xl transition hover:scale-110 js-hoverable font-semibold px-1/12 level__answer js-level__answer" data-position="right" data-result="bingo" data-level="9">
+<div class="inline-flex flex-shrink-0 lowercase relative">
+<div class="flex lg:hidden w-full absolute top-0 left-0 flex justify-center -mt-6 text-sm">
+<span class="inline-block relative">
+<i class="far fa-share level__draggable-key js-level__draggable-key is-active"></i>
+</span>
+</div>
+<span>
+#e25091
+</span>
+</div>
+</div>
+<div class="font-sans-primary text-white text-2xl lg:text-3xl 2xl:text-4xl font-semibold transition hover:scale-110 js-hoverable px-1/12 level__answer js-level__answer" data-position="left" data-result="bongo" data-level="9">
+<div class="inline-flex flex-shrink-0 lowercase relative">
+<div class="flex lg:hidden w-full absolute top-0 left-0 flex justify-center -mt-6 text-sm">
+<span class="mirror">
+<i class="far fa-share level__draggable-key js-level__draggable-key is-active"></i>
+</span>
+</div>
+<span>
+#F4D8DC
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w-full screen-height absolute top-0 left-0 flex items-center justify-center level js-level" style="background-color: #14664c" data-level="10" data-colour="#14664c">
+<div class="w-full screen-height absolute top-0 left-0 bg-secondary-500 flex items-center justify-center level__results level__results--center js-level__results" data-level="10">
+<div class="inline-flex flex-col items-center justify-center text-center">
+<div class="inline-flex font-sans-primary text-white text-base max-w-2xl level__results-text js-level__results-text">
+<div>
+<span class="js-level__results-text-message hidden" data-results="bad">
+Errrm, I think you need to try again...
+</span>
+<span class="js-level__results-text-message hidden" data-results="good">
+Looks like you know your hex codes!
+</span>
+</div>
+</div>
+<div class="inline-flex font-sans-primary font-semibold text-white text-3xl sm:text-4xl max-w-2xl mb-10 level__results-heading">
+<div>
+You got<span class="js-correct-count mx-2 inline-block " data-count="0">0</span>correct!
+</div>
+</div>
+<div class="inline-flex level__results-button">
+<a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fmadebyshape.co.uk%2Fhex-test%2F&via=madebyshape&text=I%20just%20scored%200/10%20on%20Hex%20Test.%20Think%20you%20can%20do%20better%3F%20Give%20it%20a%20go%21" target="_blank" class="inline-flex items-center group js-popup js-level__results-share js-hoverable">
+<span class="w-12 h-12 relative rounded-full font-bold inline-flex items-center justify-center text-white text-xl group-hover:scale-120 transition">
+<span class="absolute top-0 left-0 w-full h-full flex items-center justify-center z-20 text-white transition--slow group-hover:rotate-360">
+<i class="fab fa-twitter text-sm mt-px"></i>
+</span>
+<div class="w-full h-full absolute top-0 left-0 rounded-full bg-black-alpha-20">
+</div>
+</span>
+<span class="hidden lg:inline-block font-sans-primary text-white text-sm ml-3 transition text-left group-hover:opacity-100 group-hover:translate-x-2">
+Share your score<br />
+Invite your friends
+</span>
+</a>
+</div>
+<div class="inline-flex mt-8 level__results-button">
+<a href="#" class="button level__reset js-level__reset js-hoverable-shrink group">
+<span>
+Play again
+</span>
+<div class="button__shape">
+</div>
+<div class="button__background">
+</div>
+<span>
+<i class="fas fa-undo-alt"></i>
+</span>
+</a>
+</div>
+</div>
+</div>
+<div class="w-full h-full relative flex items-center justify-center top-0 left-0 level__answers js-level__answers" data-level="10">
+<div class="inline-block mb-32 lg:mb-0 w-full lg:w-6/12 xl:w-7/12 2xl:w-6/12 h-px relative transition z-20 level__border js-level__border">
+</div>
+<div class="w-full h-auto lg:h-full absolute bottom-0 left-0 mb-32 lg:mb-0 flex items-center justify-between z-20">
+<div class="font-sans-primary text-white text-2xl lg:text-3xl 2xl:text-4xl transition hover:scale-110 js-hoverable font-semibold px-1/12 level__answer js-level__answer" data-position="left" data-result="bingo" data-level="10">
+<div class="inline-flex flex-shrink-0 lowercase relative">
+<div class="flex lg:hidden w-full absolute top-0 left-0 flex justify-center -mt-6 text-sm">
+<span class="inline-block relative mirror">
+<i class="far fa-share level__draggable-key js-level__draggable-key is-active"></i>
+</span>
+</div>
+<span>
+#14664c
+</span>
+</div>
+</div>
+<div class="font-sans-primary text-white text-2xl lg:text-3xl 2xl:text-4xl font-semibold transition hover:scale-110 js-hoverable px-1/12 level__answer js-level__answer" data-position="right" data-result="bongo" data-level="10">
+<div class="inline-flex flex-shrink-0 lowercase relative">
+<div class="flex lg:hidden w-full absolute top-0 left-0 flex justify-center -mt-6 text-sm">
+<span class="">
+<i class="far fa-share level__draggable-key js-level__draggable-key is-active"></i>
+</span>
+</div>
+<span>
+#223046
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="-mt-32 lg:mt-0 w-6/12 md:w-4/12 lg:w-3/12 xl:w-1/5 2xl:w-2/12 inline-flex relative level__draggable js-level__draggable">
+<div class="w-full bg-white relative rounded cursor-grab inline-flex items-center justify-center relative z-20 level__draggable-card js-level__draggable-card  js-hoverable-reverse">
+<div class="absolute top-0 left-0 w-full h-full flex items-center justify-center scale-90 lg:scale-100">
+<svg width="61" height="67" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<path id="a" d="M.00025652.14H58.8717391v36.2264133H.00025652z" />
+<path id="c" d="M.00025556.89052727H22.4891444V28H.00025556z" />
+<path id="e" d="M.16653704.25416364H33.7406111V28H.16653704z" />
+</defs>
+<g fill="none" fill-rule="evenodd">
+<g transform="rotate(-1 36.99999552 -31.29430955)">
+<mask id="b" fill="#fff">
+<use xlink:href="#a" />
+</mask>
+<path d="M37.1959087 32.31308c0 2.1533333 1.7956522 3.9266667 3.976087 3.9266667 2.1804347 0 3.9760869-1.7733334 3.9760869-3.9266667v-8.9933333h9.7478261c2.1804348 0 3.976087-1.7733334 3.976087-3.9266667s-1.7956522-3.9266667-3.976087-3.9266667h-9.7478261V4.06641333c0-2.15333333-1.7956522-3.92666666-3.9760869-3.92666666-2.1804348 0-3.976087 1.77333333-3.976087 3.92666666V15.59308H22.5741696V4.06641333c0-2.15333333-1.7956522-3.92666666-3.976087-3.92666666-2.1804348 0-3.9760869 1.77333333-3.9760869 3.92666666V15.59308H3.97634348c-2.18043478 0-3.97608696 1.7733333-3.97608696 3.9266667 0 2.1533333 1.79565218 3.9266666 3.97608696 3.9266666H14.6219957v8.9933334c0 2.1533333 1.7956521 3.9266666 3.9760869 3.9266666 2.1804348 0 3.976087-1.7733333 3.976087-3.9266666v-8.9933334h14.6217391V32.31308z" fill="#000" mask="url(#b)" />
+</g>
+<g transform="rotate(-1 2253.97870619 -73.08863737)">
+<mask id="d" fill="#fff">
+<use xlink:href="#c" />
+</mask>
+<path d="M18.5280333.89052727H3.96136667c-2.17222223 0-3.96111111 1.78181818-3.96111111 3.94672728 0 2.16363636 1.78888888 3.94418181 3.96111111 3.94418181H14.5669222V24.0541636c0 2.1636364 1.7888889 3.9467273 3.9611111 3.9467273 2.1722223 0 3.9611111-1.7830909 3.9611111-3.9467273V4.83725455c0-2.1649091-1.7888888-3.94672728-3.9611111-3.94672728" fill="#3a53ff" mask="url(#d)" class="js-logo__colour" />
+</g>
+<g opacity=".8" transform="rotate(-1 2214.18435272 -1505.94674878)">
+<mask id="f" fill="#fff">
+<use xlink:href="#e" />
+</mask>
+<path d="M29.7220926.25416364H4.18505556c-2.20370371 0-4.01851852 1.78181818-4.01851852 3.94672727 0 2.16363636 1.81481481 3.94418182 4.01851852 3.94418182h7.64814814V24.0541636c0 2.1636364 1.8148148 3.9467273 4.0185185 3.9467273s4.0185185-1.7830909 4.0185185-3.9467273V8.14507273h9.8518519c2.2037037 0 4.0185185-1.78054546 4.0185185-3.94418182 0-2.16490909-1.8148148-3.94672727-4.0185185-3.94672727" fill="#000" mask="url(#f)" />
+</g>
+</g>
+</svg>
+</div>
+</div>
+</div>
+
+<div class="fixed bottom-0 left-0 z-40 w-full pointer-events-none flex items-center justify-center p-8 lg:p-10 level__draggable-key js-level__draggable-key is-active">
+<div class="text-center text-white">
+<span class="block relative animation--bounce">
+<i class="fal fa-hand-pointer text-xl"></i>
+</span>
+<div class="font-sans-primary text-sm mt-3 lg:mt-5">
+Drag to choose
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="fixed bottom-0 left-0 z-30 p-5 lg:p-10 pace__fade">
+<a href="https://madebyshape.co.uk/" target="_blank" class="inline-flex items-center group js-hoverable js-site__credit">
+<span class="w-12 h-12 relative rounded-full font-bold inline-flex items-center justify-center text-white text-xl group-hover:scale-120 transition">
+<span class="absolute top-0 left-0 w-full h-full flex items-center justify-center z-20 text-white transition--slow group-hover:rotate-360">
+S
+</span>
+<div class="w-full h-full absolute top-0 left-0 rounded-full bg-black-alpha-20">
+</div>
+</span>
+<span class="hidden lg:inline-block font-sans-primary text-white text-sm w-40 ml-2 transition group-hover:opacity-100 group-hover:translate-x-2">
+Digital Agency
+MadeByShape
+</span>
+</a>
+</div>
+<div class="hidden lg:inline-block fixed bottom-0 right-0 z-30 p-5 lg:p-10 pace__fade">
+<a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fmadebyshape.co.uk%2Fhex-test%2F&via=madebyshape&text=Check%20out%20this%20cheeky%20little%20project%20that%20I%27ve%20just%20come%20across...%20" class="w-12 h-12 relative inline-flex items-center justify-center text-xs hover:scale-80 group js-hoverable js-popup">
+<span class="absolute top-0 left-0 w-full h-full flex items-center justify-center z-20 text-white">
+<i class="fab fa-twitter transition--slow group-hover:rotate-360"></i>
+</span>
+<div class="w-full h-full absolute top-0 left-0 rounded-full border border-solid border-white">
+</div>
+</a>
+</div>
+
+<script src="https://player.vimeo.com/api/player.js"></script>
+<script>
+      document.getElementById("video-play").addEventListener("click", playVideo);
+      document.getElementById("video").addEventListener("click", playVideo);
+
+      function playVideo() {
+         var player = new Vimeo.Player(document.getElementById("vimeo_player"));
+         player.play();
+
+      }
+   </script>
+<script src="/hex-test/dist/js/app.js"></script>
+</body>
+</html>
