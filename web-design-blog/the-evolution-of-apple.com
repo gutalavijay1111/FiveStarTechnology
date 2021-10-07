@@ -594,7 +594,7 @@ class="text-gray-500 text-sm">Written by</div>
 <a
 href="about.htmlmike-ashurst/" class="link link--black  font-bold tracking-snug text-2xl leading-snug mb-2">Mike Ashurst</a><div
 class="w-full lg:w-9/12">
-Hiya, I&#039;m Mike - Web Designer at Shape. My articles usually consist of design related stuff.</div></div></div></div></div></div></div><div
+Hiya, I&#039;m Mike - Web Designer at FiveStar. My articles usually consist of design related stuff.</div></div></div></div></div></div></div><div
 class="section overflow-hidden bg-gray-100 py-12 md:py-20 3xl:py-32"><div
 class="section__container"><div
 class="text-black"><div
